@@ -3,11 +3,31 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
-<Button  
-    android:id="@+id/MyButton"
-    android:layout_width="match_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/Hello"
-    />
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="#FF0000"
+    android:backgroundTint="#ffff0000">
+
+    <TextView
+        android:text="25:00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="120sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TimerTextView" 
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ffff0000"
+        />
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/TimerButton"
+        android:layout_weight="0"
+        android:background="#8b0000"
+        android:backgroundTint="#ff8b0000"
+        android:textSize="40sp" />
 </LinearLayout>
