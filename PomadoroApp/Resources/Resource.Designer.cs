@@ -60,11 +60,14 @@ namespace PomadoroApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int StartButton = 2131034113;
+			// aapt resource value: 0x7f050002
+			public const int StartButton = 2131034114;
 			
 			// aapt resource value: 0x7f050000
-			public const int TimerTextView = 2131034112;
+			public const int TimerStatus = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int TimerTextView = 2131034113;
 			
 			static Id()
 			{

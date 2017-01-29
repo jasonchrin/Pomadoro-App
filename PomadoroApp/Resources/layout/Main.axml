@@ -7,20 +7,28 @@
     android:minHeight="25px"
     android:background="#FF0000"
     android:backgroundTint="#ffff0000">
-
     <TextView
-        android:text="25:00"
+        android:text="POMADORO"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TimerStatus"
+        android:layout_weight="0"
+        android:background="#333333"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:backgroundTint="#ff333333" />
+    <TextView
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="120sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/TimerTextView" 
+        android:id="@+id/TimerTextView"
         android:layout_weight="1"
         android:gravity="center"
         android:background="#ff0000"
         android:textColor="#ffffff"
-        android:backgroundTint="#ffff0000"
-        />
+        android:backgroundTint="#ffff0000" />
     <Button
         android:id="@+id/StartButton"
         android:layout_width="match_parent"

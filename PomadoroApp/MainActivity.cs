@@ -23,19 +23,16 @@ namespace PomadoroApp
     [Activity(Label = "Pomadoro App", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        private int _shortBreak = 300;
-        private int _longBreak =  900;
+        private int _shortBreak =  300;
+        private int _longBreak = 900;
         private int _pomodroTime =  1500;
-        private int _countseconds =  1500;
+        private int _countseconds = 1500;
         private int _longBreakInterval = 3;
         private int _currentPomodoro = 1;
         private int _totalBreak = 1;
         private TimerType _currentTimer = TimerType.POMODORO;
         private TimerState _timerState = TimerState.STOPPED;
-
-
         private Timer _timer = new Timer();
-
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -107,7 +104,7 @@ namespace PomadoroApp
                     _countseconds = _pomodroTime;
                     break;
             }
-            RunOnUiThread(SetTimeerBackground);
+            RunOnUiThread(SetTimerBackground);
         }
         private string secondsToCountdown()
         {
@@ -121,16 +118,21 @@ namespace PomadoroApp
             TextView timerText = FindViewById<TextView>(Resource.Id.TimerTextView);
             timerText.Text = secondsToCountdown();
         }
-        private void SetTimeerBackground()
+        private void SetTimerBackground()
         {
+            TextView timerStatus = FindViewById<TextView>(Resource.Id.TimerStatus);
+            timerStatus.Text = _currentTimer.ToString();
             TextView timerText = FindViewById<TextView>(Resource.Id.TimerTextView);
-            if(_currentTimer == TimerType.POMODORO)
+
+            if (_currentTimer == TimerType.POMODORO)
             {
                 timerText.SetBackgroundColor(Android.Graphics.Color.Red);
+                
             }
             else
             {
                 timerText.SetBackgroundColor(Android.Graphics.Color.Blue);
+                
             }
            
         }

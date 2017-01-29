@@ -1,2 +1,5 @@
 PomadoroApp/bin/Debug/
 PomadoroApp/obj/Debug/
+PomadoroApp/obj/Release/
+PomadoroApp/bin/Release/
+*.apk
