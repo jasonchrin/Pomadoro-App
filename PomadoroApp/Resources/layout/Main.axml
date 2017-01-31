@@ -6,7 +6,8 @@
     android:minWidth="25px"
     android:minHeight="25px"
     android:background="#FF0000"
-    android:backgroundTint="#ffff0000">
+    android:backgroundTint="#ffff0000"
+	android:keepScreenOn="true">
     <TextView
         android:text="POMADORO"
         android:textAppearance="?android:attr/textAppearanceLarge"
